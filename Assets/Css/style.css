@@ -208,3 +208,70 @@ header button {
 .aboutme-desc li>a:hover {
   color: var(--primary);
 }
+
+/* My Work Section */
+
+.work-section-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+}
+
+.work-section{
+  color: var(--white);
+  background-color: var(--dark-primary);
+  padding: 60px;
+  text-align: center;
+}
+.work-section-box{
+  background-color: #22282f;
+  padding: 60px 30px;
+  max-width: 300px;
+  text-align: left;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-right: 40px;
+}
+.work-section-box:hover{
+  font-size: 20px;
+  transition: 0.5s;
+}
+.work-section-box p{
+  margin: 10px 0px;
+  color: gray;
+}
+.work-section-box a{
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.work-section-box--desc{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.work-section-box--desc p{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.work-section-icon{
+  background-color: var(--primary);
+  padding: 15px;
+  border-radius: 18px;
+}
+.work-section-icon:hover{
+  background-color: var(--primary-hover);
+}
+
+.work-section-box:hover{
+  background-color: #11131a;
+}
+.work-section>h4{
+  font-size: 30px;
+  font-weight: 700;
+}
+.work-section>h4>span{
+  color: var(--primary);
+}
