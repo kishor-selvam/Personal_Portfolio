@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kishor Portfolio</title>
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="./Assets/Css/style.css" />
   </head>
   <body>
@@ -14,35 +19,77 @@
       <div>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#about-section">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
       <div>
-        <button>DOWNLOAD CV</button>
+        <button class="btn-dark-outlined">DOWNLOAD CV</button>
       </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div>
-                <h5>Hi there,</h5>
-                <h2 class="hero_title">I'm Kishor</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum eius quae molestiae corrupti similique quia fugiat reprehenderit adipisci perferendis doloremque tempora numquam, est iste soluta a suscipit harum libero!
-                    
-                </p>
-                <div>
-                    <!-- Social Icon -->
-                </div>
-                <div>
-                    <button>Hire me</button>
-                    <button>Download Cv</button>
-                </div>
-            </div>
-            <div>
-                <img width="350px" height="400px" src="https://assets.fenwick.com/attorney-images/myles_gutenkunst_torso_2021-12-15-191459.png" alt="Kishor Portfolio">
-            </div>
-        </section>
+      <section id="hero" class="hero">
+        <div>
+          <div class="container">
+            <h5 title="Hello, How are you?">Hi there,</h5>
+            <h2 class="hero_title">I'm <span>Kishor</span></h2>
+            <p class="hero_desc">
+              I am a skilled software developer with a focus on React.js and
+              Node.js, backed by a solid foundation in web development. My
+              experience includes designing and implementing efficient,
+              maintainable, and scalable solutions.
+            </p>
+          </div>
+          <ul class="social_icons">
+            <li>
+              <a href="https://www.linkedin.com/in/kishor-selvam/" target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/kishor-selvam" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/kishor_h4kr/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+          </ul>
+          <div class="hero-buttons">
+            <button class="btn btn-primary">Hire me</button>
+            <button class="btn btn-dark-outlined">Download Cv</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="./Assets/images/Cover-Img.png" alt="Kishor Portfolio" />
+        </div>
+      </section>
+
+      <section id="about-section" class="about-section">
+        <img src="./Assets/images/Square-Img.png" alt="kishor-aboutme" />
+
+        <div class="aboutme-desc">
+          <h4>I am <span>Software</span> Developer</h4>
+          <ul>
+            <li><strong>Experience :</strong>1 year</li>
+            <li><strong>Speciality :</strong>React Js</li>
+            <li><strong>Address :</strong>Tamil Nadu</li>
+            <li>
+              <strong>Email :</strong><a href="mailto:Kishorsbca@gmail.com">Kishorsbca@gmail.com</a>
+            </li>
+            <li><strong>Phone :</strong><a href="tel:91+8310551680">91+ 8310551680</a></li>
+          </ul>
+          <button class="btn btn-primary">Know more</button>
+        </div>
+      </section>
     </main>
   </body>
 </html>

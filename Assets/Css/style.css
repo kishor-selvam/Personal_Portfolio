@@ -1,86 +1,210 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200&display=swap");
 
-:root{
-    --dark-primary:#1C1E26;
-    --dark-blue:#009FF5;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+  --dark-primary: #1c1e26;
+  --primary: #009ff5;
+  --primary-hover: #078cd3;
+  --white: #fff;
+  --black: #000;
 }
 
-body{
-    font-family: 'Nunito Sans', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
-    background-color: var(--dark-primary);
-    padding: 20px;
-    color: white;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+body {
+  font-family: "Nunito Sans", sans-serif;
 }
 
-ul{
-    display: flex;
-    list-style: none;
+header {
+  background-color: var(--dark-primary);
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-ul li{
- /* padding: 0px 10px; */
- margin-right: 20px ;
+header ul {
+  display: flex;
+  list-style: none;
 }
 
-ul li a{
-    color: white;
-    text-decoration: none;
-}
-ul li a:hover{
-    color: var(--dark-blue);
+header ul li {
+  margin-right: 20px;
 }
 
-header button{
-    padding: 10px;
-    font-weight: bold;
-    background-color: var(--dark-primary);
-    border: 2px solid var(--dark-blue);
-    color: var(--dark-blue);
-    border-radius: 8px;
-    cursor: pointer;
+header ul li a {
+  color: white;
+  text-decoration: none;
 }
-header button:hover{
-    padding: 10px;
-    font-weight: bold;
-    background-color: var(--dark-blue);
-    border: 2px solid var(--dark-primary);
-    color: #fff;
-    border-radius: 8px;
+header ul li a:hover {
+  color: var(--primary);
 }
 
-.logo{
-    font-weight: 500;
-    letter-spacing: 2px;
+.logo {
+  font-weight: 500;
+  letter-spacing: 2px;
 }
-.logo span{
-    font-weight: 500;
-    color: var(--dark-blue);
+.logo span {
+  font-weight: 500;
+  color: var(--primary);
 }
 
-header a{
-    text-decoration: none;
-    color: white;
+header a {
+  text-decoration: none;
+  color: white;
 }
 
 /* --------------- Section Hero Page -------------------- */
 
-section.hero{
-    background-color: var(--dark-primary);
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 20px 30px 0 30px;
+section.hero {
+  background-color: var(--dark-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 240px;
+}
+
+.hero_title {
+  font-size: 50px;
+}
+.hero_title > span {
+  color: var(--primary);
+}
+.container {
+  max-width: 650px;
+  margin: 0 auto;
+}
+.hero_desc {
+  color: azure;
+  text-align: justify;
+}
+
+.social_icons {
+  margin: 20px 0px;
+}
+.social_icons li {
+  margin-right: 15px;
+}
+ul.social_icons {
+  list-style: none;
+  display: flex;
+}
+.social_icons li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.social_icons li a > i.fa-linkedin:hover {
+  color: #0072b1;
+}
+.social_icons li a > i.fa-github:hover {
+  color: #000;
+}
+.social_icons li a > i.fa-instagram:hover {
+  color: #da452b;
+}
+.social_icons li a > i.fa-facebook:hover {
+  color: #0866ff;
+}
+.hero-buttons button {
+  margin-right: 10px;
+}
+
+/* Button Style */
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn.btn-primary {
+  background-color: var(--primary);
+  font-weight: 600;
+  color: var(--dark-primary);
+}
+.btn.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-dark-outlined {
+  background-color: var(--dark-primary);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  border-radius: 5px;
+  font-weight: 600;
+}
+.btn-dark-outlined:hover {
+  cursor: pointer;
+  background-color: var(--primary);
+  color: #fff;
+}
+
+header button {
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero-image img {
+  width: 520px;
+  height: 535px;
+  margin-left: 110px;
+  display: block;
+}
+
+/* ----------------- ABOUT ME SECTION ------------------ */
+
+.about-section {
+  background-color: #22282f;
+  color: var(--white);
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+.about-section img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+  box-shadow: 0.5px 0.5px 30px #8acbee;
+}
+
+.aboutme-desc > h4 > span {
+  color: var(--primary);
+}
+
+.aboutme-desc {
+  margin-left: 100px;
+  max-width: 450px;
+}
+.aboutme-desc h4 {
+  font-size: 35px;
+  font-weight: 800;
+}
+.aboutme-desc ul {
+  list-style: none;
+  margin: 15px 0px;
+}
+.aboutme-desc li {
+  margin-bottom: 8px;
+  color: rgb(184, 184, 184);
+}
+.aboutme-desc li > strong {
+  margin-right: 5px;
+  color: var(--white);
+}
+.aboutme-desc li>a {
+  color: rgb(184, 184, 184);
+  text-decoration: none;
+}
+.aboutme-desc li>a:hover {
+  color: var(--primary);
 }
