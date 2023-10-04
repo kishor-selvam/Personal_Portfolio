@@ -6,6 +6,7 @@
   --primary-hover: #078cd3;
   --white: #fff;
   --black: #000;
+  --nunito: "Nunito Sans", sans-serif;
 }
 
 * {
@@ -15,7 +16,7 @@
 }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--nunito);
 }
 
 header {
@@ -201,31 +202,30 @@ header button {
   margin-right: 5px;
   color: var(--white);
 }
-.aboutme-desc li>a {
+.aboutme-desc li > a {
   color: rgb(184, 184, 184);
   text-decoration: none;
 }
-.aboutme-desc li>a:hover {
+.aboutme-desc li > a:hover {
   color: var(--primary);
 }
 
 /* My Work Section */
 
-.work-section-item{
+.work-section-item {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-
 }
 
-.work-section{
+.work-section {
   color: var(--white);
   background-color: var(--dark-primary);
   padding: 60px;
   text-align: center;
 }
-.work-section-box{
+.work-section-box {
   background-color: #22282f;
   padding: 60px 30px;
   max-width: 300px;
@@ -234,44 +234,87 @@ header button {
   cursor: pointer;
   margin-right: 40px;
 }
-.work-section-box:hover{
+.work-section-box:hover {
   font-size: 20px;
   transition: 0.5s;
 }
-.work-section-box p{
+.work-section-box p {
   margin: 10px 0px;
   color: gray;
 }
-.work-section-box a{
+.work-section-box a {
   text-decoration: none;
   color: var(--primary);
 }
 
-.work-section-box--desc{
+.work-section-box--desc {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.work-section-box--desc p{
+.work-section-box--desc p {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.work-section-icon{
+.work-section-icon {
   background-color: var(--primary);
   padding: 15px;
   border-radius: 18px;
 }
-.work-section-icon:hover{
+.work-section-icon:hover {
   background-color: var(--primary-hover);
 }
 
-.work-section-box:hover{
+.work-section-box:hover {
   background-color: #11131a;
 }
-.work-section>h4{
+.work-section > h4 {
   font-size: 30px;
   font-weight: 700;
 }
-.work-section>h4>span{
+.work-section > h4 > span {
+  color: var(--primary);
+}
+
+/* Contact Css */
+.contact-section {
+  background-color: #14171c;
+  padding: 40px;
+  color: var(--white);
+  text-align: center;
+}
+
+.contact-section form > div > input,
+textarea {
+  padding: 5px 10px;
+  outline: none;
+  width: 350px;
+  border: none;
+  background-color: #c4c4c4;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  resize: none;
+  font-family: var(--nunito);
+}
+
+.contact-section h4 {
+  font-size: 30px;
+  margin: 0px 0px 40px 0px;
+  font-weight: 700;
+}
+.contact-section h4 span {
+  color: var(--primary);
+}
+
+footer {
+  background-color: var(--dark-primary);
+  color: white;
+  padding: 20px 0px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer p a{
+  text-decoration: none;
   color: var(--primary);
 }
