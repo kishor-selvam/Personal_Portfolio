@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth ;
+}
+
 body {
   font-family: var(--nunito);
 }
@@ -58,6 +62,9 @@ header a {
   text-decoration: none;
   color: white;
 }
+
+/* Media Query */
+
 
 /* --------------- Section Hero Page -------------------- */
 
@@ -317,4 +324,51 @@ footer {
 footer p a{
   text-decoration: none;
   color: var(--primary);
+}
+
+@media only screen and (max-width: 600px) {
+  header{
+    flex-direction: column;
+  }
+  header > *{
+    margin-bottom: 10px;
+  }
+
+  /* Hero Section */
+  section.hero{
+    flex-direction: column;
+    padding: 20px 40px;
+  }
+  .hero-image img {
+    width: 300px;
+    height: 305px;
+    margin-left: 0px;
+    display: none;
+  }
+
+  /* About Section */
+  section.about-section{
+    flex-direction: column;
+  }
+  .aboutme-desc{
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  /* My Works */
+  .work-section{
+    padding: 30px 10px;
+  }
+  .work-section-item{
+    flex-direction: column;
+  }
+  .work-section-box{
+    margin-bottom: 10px;
+    width: 100%;
+    margin-right: 0;
+  }
+  /* Contact Section */
+  .contact-section form div input, textarea{
+    width: 100%;
+  }
 }
